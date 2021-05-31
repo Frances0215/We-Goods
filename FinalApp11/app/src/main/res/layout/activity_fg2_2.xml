@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fg2_Activity2">
+
+    <Button
+        android:id="@+id/bt_quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/arrowhead"
+        android:text="今日穿搭推荐"
+        android:textSize="30sp"
+        android:paddingLeft="40dp"
+        android:gravity="center_vertical"/>
+    <ImageView
+        android:id="@+id/iv_rcheader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@mipmap/recommend"
+        android:layout_below="@+id/bt_quit"
+        android:layout_marginTop="15dp"/>
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/iv_rcheader"
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:id="@+id/relativelayout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/system_recommend_1"
+                android:layout_centerHorizontal="true"
+                android:layout_width="360dp"
+                android:layout_height="420dp"
+                android:background="@drawable/recommend_bg"/>
+            <TextView
+                android:id="@+id/system_recommend_2"
+                android:layout_centerHorizontal="true"
+                android:layout_width="360dp"
+                android:layout_height="420dp"
+                android:layout_below="@+id/system_recommend_1"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/recommend_bg_2"/>
+
+            <TextView
+                android:id="@+id/system_recommend_3"
+                android:layout_centerHorizontal="true"
+                android:layout_width="360dp"
+                android:layout_height="420dp"
+                android:layout_below="@+id/system_recommend_2"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/recommend_bg"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

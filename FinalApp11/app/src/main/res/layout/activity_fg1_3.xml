@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fg1_2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    tools:context=".Fg1_Activity2">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/relativelayout_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/bt_quit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/arrowhead"
+                android:text="裤子"
+                android:textSize="30sp"
+                android:paddingLeft="40dp"
+                android:gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="380dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:hint="搜索"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/search_background"
+                android:inputType="text"
+                />
+            <Button
+                android:id="@+id/bt_trouser1"
+                android:layout_width="380dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/et_search"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/goodbackground"
+                android:drawableLeft="@drawable/tshirt"
+                android:paddingLeft="20dp"
+                android:text="名称：短袖&#10;价格：100元&#10;颜色：蓝色"
+                />
+
+            <Button
+                android:id="@+id/bt_trouser2"
+                android:layout_width="380dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/bt_trouser1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/goodbackground"
+                android:drawableLeft="@drawable/tshirt"
+                android:paddingLeft="20dp"
+                android:text="名称：短袖&#10;价格：100元&#10;颜色：蓝色"
+                />
+
+            <Button
+                android:id="@+id/bt_trouser3"
+                android:layout_width="380dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/bt_trouser2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/goodbackground"
+                android:drawableLeft="@drawable/tshirt"
+                android:paddingLeft="20dp"
+                android:text="名称：短袖&#10;价格：100元&#10;颜色：蓝色"
+                />
+
+            <Button
+                android:id="@+id/bt_trouser4"
+                android:layout_width="380dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/bt_trouser3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/goodbackground"
+                android:drawableLeft="@drawable/tshirt"
+                android:paddingLeft="20dp"
+                android:text="名称：短袖&#10;价格：100元&#10;颜色：蓝色"
+                />
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <ImageButton
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:layout_marginTop="500dp"
+        android:layout_alignParentRight="true"
+        android:padding="20dp"
+        android:background="#0000"
+        android:src="@mipmap/add"/>
+
+
+
+
+
+</RelativeLayout>

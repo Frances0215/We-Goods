@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Fragment_2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="380dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:hint="@string/searchplan"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/search_background"
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/tv_weather"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/et1"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/weather"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@mipmap/weather"/>
+
+            <TextView
+                android:id="@+id/tv_temperary"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv_weather"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/temperature"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@mipmap/temperature"/>
+
+            <TextView
+                android:id="@+id/tv_clothescom"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/tv_temperary"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@mipmap/clothes_recommend"/>
+
+
+            <ImageButton
+                android:id="@+id/check_clothescom"
+                android:layout_width="130dp"
+                android:layout_height="20dp"
+                android:layout_above="@+id/tv_outcom"
+                android:layout_alignRight="@+id/tv_clothescom"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="5dp"
+                android:src="@mipmap/checkmore"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/tv_outcom"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/tv_clothescom"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@mipmap/travel_recommend"/>
+            <ImageButton
+                android:id="@+id/check_outcom"
+                android:layout_width="130dp"
+                android:layout_height="20dp"
+                android:layout_above="@+id/tv_shicom"
+                android:layout_alignRight="@+id/tv_outcom"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="5dp"
+                android:src="@mipmap/checkmore_2" />
+
+            <TextView
+                android:id="@+id/tv_shicom"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/tv_outcom"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@mipmap/food_recommend"/>
+            <ImageButton
+                android:id="@+id/check_shicom"
+                android:layout_width="130dp"
+                android:layout_height="20dp"
+                android:layout_above="@+id/tv_shopcom"
+                android:layout_alignRight="@+id/tv_shicom"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="5dp"
+                android:src="@mipmap/checkmore" />
+
+            <TextView
+                android:id="@+id/tv_shopcom"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/tv_shicom"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@mipmap/shop_recommend"/>
+            <ImageButton
+                android:id="@+id/check_shopcom"
+                android:layout_width="130dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/tv_shopcom"
+                android:layout_alignRight="@+id/tv_shopcom"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="5dp"
+                android:src="@mipmap/checkmore_2" />
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

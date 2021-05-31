@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0FFFF"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/id_img_logo"
+        android:layout_width="125dp"
+        android:layout_height="135dp"
+        android:layout_marginBottom="100dp"
+        android:src="@mipmap/logo"
+        android:contentDescription="@string/todo" />
+
+    <EditText
+        android:id="@+id/id_et_user"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:hint="@string/account"
+        android:inputType="text"
+        android:drawableLeft="@mipmap/count"
+        android:autofillHints=""
+        android:drawableStart="@mipmap/count" />
+
+    <EditText
+        android:id="@+id/id_et_pw"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:hint="@string/password"
+        android:drawableLeft="@mipmap/password"
+        android:inputType="text"
+        android:autofillHints=""
+        android:layout_marginTop="15dp"
+        android:drawableStart="@mipmap/password" />
+    <Button
+        android:id="@+id/id_bt_login"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/login"
+        android:textColor="#FFFFFF"
+        android:background="#FF009688"/>
+    <TextView
+        android:id="@+id/id_tv_ques"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="20dp"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

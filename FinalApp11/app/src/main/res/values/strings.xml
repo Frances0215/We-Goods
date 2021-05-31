@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">We</string>
+    <string name="login">登录</string>
+    <string name="question">登录遇到问题？</string>
+    <string name="password">密码</string>
+    <string name="todo">TODO</string>
+    <string name="account">账号/电话号</string>
+    <string name="search">搜索</string>
+    <string name="yigui">衣柜</string>
+    <string name="kuzi">裤子</string>
+    <string name="xiejia">鞋架</string>
+    <string name="food">食品柜</string>
+    <string name="Bags">箱包</string>
+    <string name="others">杂物柜</string>
+    <string name="check">查看</string>
+    <string name="title_activity_main4">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="duanxiu">短袖</string>
+    <string name="waitao">外套</string>
+    <string name="weiyi">卫衣</string>
+    <string name="maoyi">毛衣</string>
+    <string name="chenshan">衬衫</string>
+
+    <string name="description"></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="searchplan">请输入今日出行计划</string>
+    <string name="weather">今日天气：小雨转阴</string>
+    <string name="temperature">今日温度：24-28</string>
+    <string name="submit">提交</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

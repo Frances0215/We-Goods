@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fg2_Activity3">
+
+    <Button
+        android:id="@+id/bt_quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/arrowhead"
+        android:text="1号 名称"
+        android:textSize="25sp"
+        android:paddingLeft="40dp"
+        android:gravity="center_vertical"/>
+    
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@+id/bt_quit"
+        android:src="@drawable/tshirt"
+        android:background="@mipmap/pic_background_2"/>
+
+    <ScrollView
+        android:id="@+id/good_information"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/pic_background"
+        android:layout_below="@+id/picture">
+
+        <TextView
+            android:id="@+id/tv_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="10dp"
+            android:lineSpacingMultiplier="1"
+            android:padding="20dp"
+            android:layout_marginTop="16dp"
+            android:text="名称&#10;序号&#10;价格&#10;购买渠道&#10;淘宝链接&#10;适宜温度&#10;适宜天气&#10;颜色&#10;面料&#10;适宜场合:"
+            android:textColor="#000000"
+            android:textSize="30sp"/>
+    </ScrollView>
+
+
+
+</RelativeLayout>

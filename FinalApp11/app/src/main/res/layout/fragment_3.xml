@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/id_fragment_3"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Fragment_3">
+
+        <LinearLayout
+            android:id="@+id/id_ll_own"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@drawable/background_own">
+
+            <LinearLayout
+                android:id="@+id/id_ll_pick_portrait"
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="40px"
+                android:layout_marginLeft="16dp">
+
+                <ImageView
+                    android:id="@+id/id_iv_portrait"
+                    android:layout_width="115dp"
+                    android:layout_height="115dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/portrait" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="17">
+                <TextView
+                    android:id="@+id/id_tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:layout_marginTop="85px"
+                    android:textSize="14pt"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:text="啥也不会"/>
+                <TextView
+                    android:id="@+id/id_tv_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="55px"
+                    android:textSize="10pt"
+                    android:gravity="center_vertical"
+                    android:text="19岁/学生"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id_ll_forward"
+                android:layout_width="80dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="40px"
+                    android:src="@mipmap/arrow_forward"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/id_ll_func"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/id_ll_own"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/id_tv_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="13pt"
+                android:background="@drawable/background_setting"
+                android:text="  个性穿搭" />
+            <TextView
+                android:id="@+id/id_tv_history"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="13pt"
+                android:background="@drawable/background_setting"
+                android:text="  历史记录" />
+            <TextView
+                android:id="@+id/id_tv_note"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="13pt"
+                android:background="@drawable/background_setting"
+                android:text="  消息通知" />
+            <TextView
+                android:id="@+id/id_tv_setting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="13pt"
+                android:background="@drawable/background_setting"
+                android:text="  设置" />
+            <TextView
+                android:id="@+id/id_tv_adv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="13pt"
+                android:background="@drawable/background_setting"
+                android:text="  意见与反馈" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/id_tv_exit"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/id_ll_func"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textSize="14pt"
+            android:text="退出登录"
+            android:textColor="@color/white"
+            android:background="@drawable/background_exit"/>
+
+    </RelativeLayout>
+</FrameLayout>

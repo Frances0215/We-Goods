@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.finalapp1">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity_Main" />
+        <activity android:name=".Fg1_Activity2" />
+        <activity android:name=".Fg2_Activity2" />
+        <activity android:name=".Fg2_Activity3" />
+        <activity android:name=".Activity_Advice" />
+        <activity android:name=".Activity_Info" />
+        <activity android:name=".Activity_Note"
+            android:launchMode="singleInstance"/>
+        <activity android:name=".Activity_Setting" />
+        <activity android:name=".Activity_Style" />
+        <activity android:name=".Fg1_Activity3"/>
+        <activity android:name=".Fg1_ActivityAdd" />
+    </application>
+
+</manifest>

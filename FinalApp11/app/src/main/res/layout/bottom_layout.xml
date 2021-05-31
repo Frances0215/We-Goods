@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/white"
+    android:id="@+id/id_tab0">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:id="@+id/id_tab_home">
+        <ImageView
+            android:id="@+id/id_iv_home"
+            android:layout_width="50pt"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_home"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/id_tab_box">
+        <ImageView
+            android:id="@+id/id_iv_box"
+            android:layout_width="50pt"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_box"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/id_tab_me">
+        <ImageView
+            android:id="@+id/id_iv_me"
+            android:layout_width="50pt"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_me"/>
+    </LinearLayout>
+
+</LinearLayout>
+

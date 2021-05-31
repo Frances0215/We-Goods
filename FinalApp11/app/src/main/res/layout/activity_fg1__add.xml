@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4f0f8"
+    android:id="@+id/act_add"
+    tools:context=".Fg1_ActivityAdd">
+
+    <ScrollView
+        android:id="@+id/scrollView_add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/relativelayout_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/bt_quitadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/arrowhead2"
+        android:text="添加物品"
+        android:textSize="30sp"
+        android:paddingLeft="40dp"
+        android:gravity="center_vertical"/>
+    <LinearLayout
+        android:id="@+id/addpic"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@mipmap/addpic"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bt_quitadd"
+        android:layout_marginTop="30dp">
+        <ImageView
+            android:id="@+id/display_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/addpic"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_goodname"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="🎈名称:"
+        android:layout_below="@+id/addpic"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/id_et_goodname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/addpic"
+        android:hint="名称"
+        android:layout_toRightOf="@+id/tv_goodname"
+        android:inputType="text"
+        android:autofillHints="" />
+    <TextView
+        android:id="@+id/tv_goodvalue"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="💲价格:"
+        android:layout_below="@+id/tv_goodname"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/id_et_goodvalue"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_goodname"
+        android:hint="价格"
+        android:layout_toRightOf="@+id/tv_goodvalue"
+        android:inputType="text"
+        android:autofillHints="" />
+    <TextView
+        android:id="@+id/tv_gooddate"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="🌙购买日期："
+        android:layout_below="@+id/tv_goodvalue"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/id_et_gooddate"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_goodvalue"
+        android:hint="购买日期"
+        android:layout_toRightOf="@+id/tv_gooddate"
+        android:inputType="text"
+        android:autofillHints="" />
+    <TextView
+        android:id="@+id/tv_goodapply"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="🥂适用场合："
+        android:layout_below="@+id/tv_gooddate"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/id_et_goodapply"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_gooddate"
+        android:hint="适用场合"
+        android:layout_toRightOf="@+id/tv_goodapply"
+        android:inputType="text"
+        android:autofillHints="" />
+    <TextView
+        android:id="@+id/tv_goodcode"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="📄编号："
+        android:layout_below="@+id/tv_goodapply"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/id_et_goodcode"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_goodapply"
+        android:hint="编号"
+        android:layout_toRightOf="@+id/tv_goodcode"
+        android:inputType="text"
+        android:autofillHints="" />
+    <TextView
+        android:id="@+id/tv_goodhigh"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="📈最高温度："
+        android:layout_below="@+id/tv_goodcode"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/id_et_goodhigh"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_goodcode"
+        android:hint="最高温度"
+        android:layout_toRightOf="@+id/tv_goodhigh"
+        android:inputType="text"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/tv_goodlow"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="📉最低温度："
+        android:layout_below="@+id/tv_goodhigh"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/id_et_goodlow"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_goodhigh"
+        android:hint="最高温度"
+        android:layout_toRightOf="@+id/tv_goodlow"
+        android:inputType="text"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/tv_goodweather"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="⛅天气："
+        android:layout_below="@+id/tv_goodlow"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/id_et_goodweather"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_goodlow"
+        android:hint="天气"
+        android:layout_toRightOf="@+id/tv_goodweather"
+        android:inputType="text"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/tv_goodcolor"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="🏳‍🌈颜色："
+        android:layout_below="@+id/tv_goodweather"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/id_et_goodcolor"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_goodweather"
+        android:hint="颜色"
+        android:layout_toRightOf="@+id/tv_goodcolor"
+        android:inputType="text"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/tv_goodfrabic"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="🌏材质"
+        android:layout_below="@+id/tv_goodcolor"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/id_et_goodfrabic"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_goodcolor"
+        android:hint="材质"
+        android:layout_toRightOf="@+id/tv_goodfrabic"
+        android:inputType="text"
+        android:autofillHints="" />
+            <Button
+                android:id="@+id/id_bt_submit"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_goodfrabic"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:text="@string/submit"
+                android:textColor="#FFFFFF"
+                android:background="#FF009688"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
